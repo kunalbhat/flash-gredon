@@ -32,7 +32,7 @@ dd {
   display: none;
 }
 
-#flip, #new-word {
+#flip {
   background: #4C5259;
   color: #fff;
   cursor: pointer;
@@ -55,13 +55,4 @@ dd {
 
 #flip {
   bottom: 0;
-}
-
-#new-word {
-  top: 0;
-
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
 }
