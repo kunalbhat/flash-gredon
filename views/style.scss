@@ -1,0 +1,50 @@
+body {
+  background: #f5f7f9;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+dl {
+  bottom: 0;
+  display: table-cell;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+dt, dd {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+dd {
+  display: none;
+}
+
+#flip {
+  background: #4C5259;
+  bottom: 0;
+  color: #fff;
+  cursor: pointer;
+  left: 0;
+  margin: 0 auto;
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  width: 100%;
+
+  &:hover {
+    background: darken(#4C5259, 10%);
+  }
+}

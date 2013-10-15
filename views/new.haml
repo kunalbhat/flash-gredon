@@ -1,0 +1,14 @@
+%header
+  %h2 New Term
+
+%section
+  %form{ action: '/terms', method: 'post' }
+    %div
+      %label{ for: 'term[word]' } Word
+      %input{ type: 'text', name: 'term[word]', value: '', id: 'term[word]' }
+
+    %div
+      %label{ for: 'term[definition]' } Definition
+      %textarea{ name: 'term[definition]', value: '', id: 'term[definition]' }
+
+    %input{ type: 'submit', value: 'Submit', class: 'button' }
