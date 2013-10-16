@@ -7,7 +7,22 @@ require_relative 'config/sass'
 require_relative 'models/term'
 
 get '/' do
-  @term = Term.all.sample
+  @terms = Term.all
+
+  flashcards = Array.new
+  set        = Array.new
+
+  @terms.each do |term|
+    flashcards.push(term)
+  end
+
+  flashcards = flashcards.shuffle
+
+  flashcards[0..20].each do |flashcard|
+    set << flashcard
+  end
+
+  @flashcards = set
 
   haml :index
 end

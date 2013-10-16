@@ -1,6 +1,10 @@
-%dl
-  %dt= @term.word
-  %dd
-    = @term.definition
+-@flashcards.each do |flashcard|
+  .flashcard
+    %h3= flashcard.word
+    %p= flashcard.definition
+
+%nav
+  %a{ href: '#', id: 'next' } Next
 
 #flip Flip
+

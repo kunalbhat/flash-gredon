@@ -14,5 +14,21 @@
 
 :coffeescript
   $('#flip').on 'click', ()->
-    $('dt').toggle()
-    $('dd').toggle()
+    $('h3').toggle()
+    $('p').toggle()
+
+  index = 0
+
+  $('.flashcard').eq(index).addClass('active')
+
+  $('#next').on 'click', (event)->
+    event.preventDefault()
+
+    if(index == 19)
+      console.log index
+      index = 0
+    else
+      console.log index
+      index++
+
+    $('.flashcard').removeClass('active').eq(index).addClass('active')
