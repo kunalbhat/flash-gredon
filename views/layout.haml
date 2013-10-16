@@ -2,8 +2,18 @@
 %html{ lang: 'en' }
   %head
     %meta{ charset: 'utf-8' }
-    %meta{ name: 'viewport', content: 'initial-scale=1, maximum-scale=1' }
+    %meta{ name: 'viewport', content: 'initial-scale=1.0, maximum-scale=1.0' }
+    %meta{ name: 'apple-mobile-web-app-capable', content: 'yes' }
     %title Flash GREdon
+    %link{ href: '/favicon.ico', rel: 'shortcut icon' }
+    %link{ rel:'apple-touch-startup-image',
+      media: '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)',
+      href: 'apple-touch-startup-image-640x1096.png' }
+    %link{ rel: 'apple-touch-startup-image', href: 'apple-touch-startup-image-640x920.png' }
+    %link{ href: '/touch-icon-iphone.png', rel: 'apple-touch-icon-precomposed' }
+    %link{ href: '/touch-icon-ipad.png', rel: 'apple-touch-icon-precomposed', sizes: '72x72' }
+    %link{ href: '/touch-icon-iphone-retina.png', rel: 'apple-touch-icon-precomposed', sizes: '114x114' }
+    %link{ href: '/touch-icon-ipad-retina.png', rel: 'apple-touch-icon-precomposed', sizes: '144x144' }
 
     %link{ href: '/style.css', rel: 'stylesheet' }
 
@@ -23,6 +33,9 @@
 
   $('#next').on 'click', (event)->
     event.preventDefault()
+
+    $('p').hide()
+    $('h3').show()
 
     if(index == 19)
       console.log index
