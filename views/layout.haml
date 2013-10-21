@@ -23,7 +23,6 @@
 
 :coffeescript
   $('#flip').on 'click', ()->
-    $('h3').toggle()
     $('p').toggle()
 
   index = 0
@@ -34,7 +33,6 @@
     event.preventDefault()
 
     $('p').hide()
-    $('h3').show()
 
     if(index == 19)
       console.log index
