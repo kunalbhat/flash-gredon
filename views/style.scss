@@ -11,6 +11,7 @@ body {
 .flashcard {
   display: none;
   height: 100%;
+  margin-top: 100px;
   overflow: hidden;
   text-align: center;
   vertical-align: middle;
@@ -44,16 +45,14 @@ body {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 
-  &:hover {
-    background: darken(#4c5259, 10%);
-  }
+  &:hover { background: darken(#4c5259, 10%); }
 }
 
 #next {
-  background: #bdc3c7;
-  bottom: 60px;
+  background: #fff;
+  color: #4c5259;
+  box-shadow: 0 0 5px #bdc3c7;
+  top: 0;
 
-  &:hover {
-    background: darken(#bdc3c7, 10%);
-  }
+  &:hover { background: #efefef; }
 }
